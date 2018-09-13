@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:startDestination="@id/productListDestination">
+    <fragment
+        android:id="@+id/productListDestination"
+        android:name="com.zoftino.navigation.ProductsListFragment"
+        android:label="product_list"
+        tools:layout="@layout/products_list_layout">
+        <action
+            android:id="@+id/action_list_details"
+            app:destination="@id/productDetailsDestination"/>
+    </fragment>
+    <fragment
+        android:id="@+id/productDetailsDestination"
+        android:name="com.zoftino.navigation.ProductDetailsFragment"
+        android:label="product_details"
+        tools:layout="@layout/product_details" />
+    <fragment
+        android:id="@+id/addressDestination"
+        android:name="com.zoftino.navigation.AddressFragment"
+        android:label="address"
+        tools:layout="@layout/address">
+        <action
+            android:id="@+id/action_address_payment"
+            app:destination="@id/paymentDestination"/>
+    </fragment>
+    <activity
+        android:id="@+id/paymentDestination"
+        android:name="com.zoftino.navigation.PaymentActivity"
+        android:label="payment"
+        tools:layout="@layout/payment_activity" />
+</navigation>

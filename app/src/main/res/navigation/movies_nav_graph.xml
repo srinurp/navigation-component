@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/moviesDestination">
+    <fragment
+        android:id="@+id/moviesDestination"
+        android:name="com.zoftino.navigation.MoviesListFragment"
+        android:label="movies"
+        tools:layout="@layout/movie_list">
+        <action
+            android:id="@+id/action_movies_details"
+            app:destination="@id/movieDetailsDestination"
+            app:enterAnim="@anim/action_enter"
+            app:exitAnim="@anim/action_exit"/>
+    </fragment>
+    <fragment
+        android:id="@+id/movieDetailsDestination"
+        android:name="com.zoftino.navigation.MovieDetailsFragment"
+        android:label="movie details"
+        tools:layout="@layout/movie_details">
+        <argument
+            android:name="movieId"
+            android:defaultValue="ab12" />
+    </fragment>
+</navigation>

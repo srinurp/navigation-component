@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/navigation_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Navigation Component Examples" />
+
+    <Button
+        android:id="@+id/nav_options_menu_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:onClick="optionsMenu"
+        android:text="Navigation Component Example" />
+
+    <Button
+        android:id="@+id/nav_bottom_nav_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:onClick="bottomNav"
+        android:text="Navigation Component Bottom Nav Example" />
+
+    <Button
+        android:id="@+id/nav_navigation_drawer_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_marginTop="16dp"
+        android:onClick="navigationDrawer"
+        android:text="Navigation Component NavigationDrawer Example" />
+
+    <Button
+        android:id="@+id/nav_pass_data_transitions_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_marginTop="16dp"
+        android:onClick="passDataTransitions"
+        android:text="Navigation Component Pass Data and Transitions Example" />
+</LinearLayout>
